@@ -1,7 +1,8 @@
 <div>
     <H2>My Task today</H2>
-    <li *ngFor="let todo of todoList">
+    <li *ngFor="let todo of todoList; let i = index">
         {{todo}}
+        <button (click)="deleteTask(i)">Delete</button>
     </li>
     <br>
     Task: <input [(ngModel)] = "task" />
