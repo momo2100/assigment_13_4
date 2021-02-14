@@ -1,0 +1,10 @@
+<div>
+    <H2>My Task today</H2>
+    <li *ngFor="let todo of todoList">
+        {{todo}}
+    </li>
+    <br>
+    Task: <input [(ngModel)] = "task" />
+    <button
+    (click)="addTask()">Add</button>
+</div>
