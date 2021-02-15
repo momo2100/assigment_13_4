@@ -18,7 +18,6 @@ export class ToDoListComponent {
     }
 
     deleteTask(index){
-        alert(index);
         this.todoList.splice(index, 1);
     }
 }
